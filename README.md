@@ -1,4 +1,4 @@
-artisan-memory-repository
-=========================
+artisan-repository
+==================
 
-Artisan Persistance layer in memory
+Artisan persistance library
