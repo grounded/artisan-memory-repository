@@ -1,7 +1,7 @@
 require 'rake/gempackagetask'
 
 PKG_NAME = "artisan-memory-repository"
-PKG_VERSION   = "0.0.1"
+PKG_VERSION   = "0.0.2"
 PKG_FILE_NAME = "#{PKG_NAME}-#{PKG_VERSION}"
 PKG_FILES = FileList[
   'lib/artisan-memory-repository/**/*',
