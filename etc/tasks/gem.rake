@@ -4,7 +4,7 @@ PKG_NAME = "artisan-memory-repository"
 PKG_VERSION   = "0.0.1"
 PKG_FILE_NAME = "#{PKG_NAME}-#{PKG_VERSION}"
 PKG_FILES = FileList[
-  'lib/artisan/**/*',
+  'lib/artisan-memory-repository/**/*',
 ]
 
 spec = Gem::Specification.new do |s|
