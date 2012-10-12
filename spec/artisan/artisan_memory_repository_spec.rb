@@ -20,7 +20,7 @@ describe ArtisanMemoryRepository do
   it "has a future user repo" do
     ArtisanMemoryRepository.future_user.should be_a ArtisanMemoryRepository::FutureUserRepository
   end
-  
+
   it "has a change repo" do
     ArtisanMemoryRepository.change.should be_a ArtisanMemoryRepository::ChangeRepository
   end

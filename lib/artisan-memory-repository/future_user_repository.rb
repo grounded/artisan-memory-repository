@@ -1,5 +1,6 @@
 require 'artisan-memory-repository/models/future_user'
 require 'artisan-memory-repository/base_repository'
+require 'artisan/repository'
 
 module ArtisanMemoryRepository
   class FutureUserRepository
@@ -16,7 +17,7 @@ module ArtisanMemoryRepository
         save(future_user)
       else
         future_user.add_errors(:email => "This email has already been taken")
-        raise ArgumentError.new('The record has errors.')
+        raise Artisan::RecordNotValid.new(future_user)
       end
       future_user
     end

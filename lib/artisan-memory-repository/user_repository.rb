@@ -1,5 +1,6 @@
 require 'artisan-memory-repository/models/user'
 require 'artisan-memory-repository/base_repository'
+require 'artisan/repository'
 
 module ArtisanMemoryRepository
   class UserRepository
@@ -15,7 +16,7 @@ module ArtisanMemoryRepository
         save(user)
       else
         user.add_error(:login, 'has already been taken')
-        raise ArgumentError.new('The record has errors.')
+        raise Artisan::RecordNotValid.new(user)
       end
       user
     end
