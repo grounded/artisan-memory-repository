@@ -18,6 +18,7 @@ spec = Gem::Specification.new do |s|
   s.author = "8th Light Craftsmen"
   s.email = "paul@8thlight.com"
   s.homepage = "http://8thlight.com"
+  s.add_dependency("activemodel", ">= 3.1.6")
 end
 
 Gem::PackageTask.new(spec) do |pkg|
