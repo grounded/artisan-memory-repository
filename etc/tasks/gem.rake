@@ -1,7 +1,7 @@
 require 'rubygems/package_task'
 
 PKG_NAME = "artisan-memory-repository"
-PKG_VERSION   = "0.0.2"
+PKG_VERSION   = "0.0.3"
 PKG_FILE_NAME = "#{PKG_NAME}-#{PKG_VERSION}"
 PKG_FILES = FileList[
   'lib/artisan-memory-repository/**/*',
