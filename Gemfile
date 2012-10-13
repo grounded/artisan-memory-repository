@@ -5,5 +5,5 @@ gem 'artisan-repository', :git => 'git://github.com/8thlight/artisan-repository'
 gem 'activemodel', '3.1.6'
 
 group :test, :development do
-  gem 'rspec', '2.7.0'
+  gem 'rspec', '2.11.0'
 end
