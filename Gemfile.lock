@@ -1,7 +1,7 @@
 GIT
   remote: git://github.com/8thlight/artisan-repository
-  revision: ce92f84c20a254b0d090a326baaa90ecb87871b8
-  ref: ce92f84c20a254b0d090a326baaa90ecb87871b8
+  revision: 0d6b8746a9442f5c7211e06f3236ae29cbab3a38
+  ref: 0d6b8746a9442f5c7211e06f3236ae29cbab3a38
   specs:
     artisan-repository (0.0.2)
 

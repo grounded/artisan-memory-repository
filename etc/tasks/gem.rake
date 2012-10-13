@@ -1,4 +1,4 @@
-require 'rake/gempackagetask'
+require 'rubygems/package_task'
 
 PKG_NAME = "artisan-memory-repository"
 PKG_VERSION   = "0.0.2"
@@ -20,7 +20,7 @@ spec = Gem::Specification.new do |s|
   s.homepage = "http://8thlight.com"
 end
 
-Rake::GemPackageTask.new(spec) do |pkg|
+Gem::PackageTask.new(spec) do |pkg|
   pkg.need_zip = false
   pkg.need_tar = false
 end
