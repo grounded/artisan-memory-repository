@@ -14,11 +14,6 @@ module ArtisanMemoryRepository
       return clone
     end
 
-    #def create!(attrs = {})
-    #  project = model_class.new(attrs)
-    #  self.save(project)
-    #end
-
     def create(attrs = {})
       project = model_class.new(attrs)
       self.save(project)

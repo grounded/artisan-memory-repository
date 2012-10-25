@@ -17,15 +17,16 @@ module ArtisanMemoryRepository
       create(attributes.merge({:type => "IterationChange"}))
     end
 
-
     def create_story_change(attributes = {})
       create(attributes.merge({:type => "StoryChange"}))
     end
-
 
     def find_all_by_project_id(project_id)
       records.values.find_all {|r| r.project_id == project_id}.sort_by(&:created_at).reverse
     end
 
+    def find_range_by_project_id(project_id, starts_at, ends_at)
+      find_all_by_project_id(project_id)[starts_at..ends_at]
+    end
   end
 end
