@@ -2,16 +2,8 @@ module ArtisanMemoryRepository
 
   module BaseRepository
     def save(object)
-      clone = object.dup
-
-      if clone.id
-        records[clone.id] = clone
-      else
-        clone.id = records.size + 1
-        records[clone.id] = clone
-      end
-
-      return clone
+      object.id = records.size + 1 if object.id.nil?
+      records[object.id] = object
     end
 
     def create(attrs = {})
