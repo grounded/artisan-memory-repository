@@ -1,9 +1,10 @@
 module ArtisanMemoryRepository
   class Base
+    @@next_id = 1
     def initialize(options = {})
       self.class._collections.each {|field| set(field, [])}
       options.each { |key, value| set(key, value) }
-      set(:id, random_int) if saves?
+      set(:id, next_id) if saves?
       self.init
     end
 
@@ -78,8 +79,8 @@ module ArtisanMemoryRepository
 
     private
 
-    def random_int
-      return (Time.now.to_i + rand(1000))
+    def next_id
+      @@next_id += 1
     end
   end
 end
