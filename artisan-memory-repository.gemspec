@@ -1,7 +1,7 @@
 require 'rubygems/package_task'
 
 pkg_name = "artisan-memory-repository"
-pkg_version   = "0.0.3"
+pkg_version   = "0.0.11"
 
 spec = Gem::Specification.new do |s|
   s.name = pkg_name
